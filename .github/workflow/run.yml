@@ -1,0 +1,19 @@
+on: [push]
+
+name: build
+
+jobs:
+  run:
+    name: Run
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: check system
+        run: |
+          lscpu && free -h
+
+      - name: check system
+        run: |
+          bash scripts/run.sh
+
