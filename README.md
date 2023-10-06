@@ -10,3 +10,9 @@ Suppose you have a.py and b.py.
 
 4. b either polls the database, or long polls a.py's output via nats, or any http endpoint.
 
+
+## solution
+
+1. hivesmind/overmind
+2. nats pubsub
+3. pid.file
